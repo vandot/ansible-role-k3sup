@@ -1,0 +1,7 @@
+---
+
+- name: Ensure k3sup binary is uninstalled
+  file:
+    state: absent
+    path: "{{ k3sup_install_dir }}/k3sup"
+
