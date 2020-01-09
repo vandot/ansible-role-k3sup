@@ -50,4 +50,4 @@ BSD-3-Clause
 
 ## Author Information
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+[Ivan Vandot](https://ivan.vandot.rs/)
