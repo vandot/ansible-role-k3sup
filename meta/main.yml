@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: k3sup
   author: Ivan Vandot 
   description: Ansible role for installing k3sup a light-weight utility to get from zero to KUBECONFIG with k3s
 
