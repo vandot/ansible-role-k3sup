@@ -17,6 +17,11 @@
     k3sup_binary_url: "{{ k3sup_github_download_url }}/{{ k3sup_release_version }}/k3sup{{ k3sup_suffix }}"
     k3sup_hash_url: "{{ k3sup_github_download_url }}/{{ k3sup_release_version }}/k3sup{{ k3sup_suffix }}.sha256"
 
+- name: Set k3sup_install_dir for Windows if not configured
+  set_fact:
+    k3sup_install_dir: $HOME/bin
+  when: ansible_facts['os_family'] == "Windows" and k3sup_install_dir == "/usr/local/bin"  
+
 - name: Ensure the k3sup hashsum is downloaded
   uri:
     url: "{{ k3sup_hash_url }}"

@@ -1,5 +1,4 @@
 ---
 - hosts: localhost
-  remote_user: root
   roles:
-    - vandot.k3sup
+    - ansible-role-k3sup 
