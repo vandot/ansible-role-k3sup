@@ -39,9 +39,9 @@ No dependencies on other roles.
 Example playbook:
 
 ```yaml
-    - hosts: servers
-      roles:
-         - { role: vandot.k3sup, k3sup_release_version: 0.7.0 }
+- hosts: servers
+  roles:
+   - { role: vandot.k3sup, k3sup_release_version: 0.7.0 }
 ```
 
 ## License
